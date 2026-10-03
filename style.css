@@ -1,0 +1,130 @@
+:root {
+  --papel: #FAF8FF;
+  --tinta: #1F1B3A;
+  --destaque: #5B4BDB;
+  --suave: #E6E1F7;
+  --linha: #D5CFEF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  background: var(--papel);
+  color: var(--tinta);
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--linha);
+  background: #fff;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--destaque);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+}
+
+nav a {
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--destaque);
+}
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+  font-weight: 800;
+  max-width: 14ch;
+}
+
+.intro {
+  margin-top: 16px;
+  max-width: 52ch;
+  font-size: 1.1rem;
+}
+
+h2 {
+  margin: 56px 0 20px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.perfis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 2px solid var(--linha);
+  border-radius: 999px;
+  color: var(--tinta);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+
+.perfil:hover {
+  background: var(--suave);
+  border-color: var(--destaque);
+}
+
+.perfil:focus-visible {
+  outline: 3px solid var(--destaque);
+  outline-offset: 3px;
+}
+
+.avatar {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--destaque);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: .9rem;
+  border-top: 1px solid var(--linha);
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 14px 18px;
+  }
+
+  nav {
+    display: none;
+  }
+}
