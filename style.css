@@ -112,6 +112,16 @@ h2 {
   place-items: center;
   font-weight: 800;
 }
+
+.avatar-foto {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;
+}
+
 footer {
   padding: 24px;
   text-align: center;
@@ -127,4 +137,21 @@ footer {
   nav {
     display: none;
   }
+}
+
+.botao {
+  display: inline-block;
+  padding: 6px 12px;
+  color: var(--destaque);
+  background-color: #FFFFFF;
+  border: 2px solid var(--destaque);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--destaque);
+  color: #FFFFFF;
 }
