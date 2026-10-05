@@ -1,0 +1,128 @@
+:root {
+  --papel: #FAF8FF;
+  --tinta: #1F1B3A;
+  --destaque: #5B4BDB;
+  --suave: #E6E1F7;
+  --linha: #D5CFEF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  background: var(--papel);
+  color: var(--tinta);
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 40px;
+  padding: 16px 32px;
+  background: #fff;
+  border-bottom: 1px solid var(--linha);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--destaque);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--tinta);
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: var(--linha);
+}
+
+nav a.ativo {
+  color: var(--destaque);
+  border-bottom-color: var(--destaque);
+}
+.banner {
+  padding: 96px 32px 128px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--destaque), var(--tinta));
+}
+
+.banner h1 {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.banner p {
+  margin-top: 12px;
+  font-size: 1.15rem;
+}
+
+.cartoes {
+  position: relative;
+  max-width: 960px;
+  margin: -72px auto 64px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cartao {
+  display: block;
+  padding: 28px 24px;
+  background: #fff;
+  border: 2px solid var(--linha);
+  border-radius: 16px;
+  color: var(--tinta);
+  text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+
+.cartao:hover {
+  border-color: var(--destaque);
+  transform: translateY(-4px);
+}
+
+.cartao h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--destaque);
+}
+
+.cartao p {
+  margin-top: 6px;
+}
+.foto {
+  max-width: 960px;
+  margin: 0 auto 64px;
+  padding: 0 24px;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid var(--linha);
+  border-radius: 16px;
+}
