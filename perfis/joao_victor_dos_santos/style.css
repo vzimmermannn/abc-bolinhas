@@ -72,3 +72,8 @@ nav ul li:hover{
     border-width: 0.2rem;
     transform: scale(1.2);
 }
+
+#subtitulo {
+    font: size 30px;
+    
+}
