@@ -74,11 +74,6 @@ img {
     color: #FFFFFF;
 }
 
-
-/* =========================
-   ÁREA DE ACESSO
-   ========================= */
-
 .acesso {
     width: 90%;
     max-width: 1000px;
@@ -100,11 +95,6 @@ img {
     border-left: 5px solid var(--destaque);
     border-right: 5px solid var(--destaque);
 }
-
-
-/* =========================
-   BOTÕES
-   ========================= */
 
 .acesso a {
     display: inline-block;
@@ -132,19 +122,10 @@ img {
     color: #FFFFFF;
 }
 
-
-/* =========================
-   TÍTULO
-   ========================= */
-
 .acesso h1 {
     margin-bottom: 50px;
 }
 
-
-/* =========================
-   BOTÃO VOLTAR
-   ========================= */
 
 .voltar {
     width: 180px !important;
@@ -153,11 +134,6 @@ img {
 
     padding: 10px !important;
 }
-
-
-/* =========================
-   CELULAR / TELA PEQUENA
-   ========================= */
 
 @media (max-width: 850px) {
 
