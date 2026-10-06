@@ -126,3 +126,73 @@ nav a.ativo {
   border: 2px solid var(--linha);
   border-radius: 16px;
 }
+.faixa {
+  padding: 48px 32px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--destaque), var(--tinta));
+}
+
+.faixa img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 55% 38%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.texto {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.caixa {
+  padding: 32px;
+  background: #fff;
+  border: 2px solid var(--linha);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(31, 27, 58, .08);
+}
+
+.caixa p + p {
+  margin-top: 12px;
+}
+.faixa h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.habilidades,
+.contatos {
+  list-style: none;
+}
+
+.habilidades li,
+.contatos li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--linha);
+}
+
+.habilidades li:last-child,
+.contatos li:last-child {
+  border-bottom: none;
+}
+.rotulo {
+  display: block;
+  font-size: .85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--destaque);
+}
+
+.contatos a {
+  color: var(--tinta);
+}
+
+.contatos a:hover {
+  color: var(--destaque);
+}
