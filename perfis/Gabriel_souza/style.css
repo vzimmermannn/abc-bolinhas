@@ -1,0 +1,171 @@
+:root {
+    --papel: #f8feff;
+    --tinta: #1F1B3A;
+    --destaque: #5B4BDB;
+    --suave: #E6E1F7;
+    --linha: #D5CFEF;
+}
+
+body {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    background-color: #FAF8FF;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h3 {
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+img {
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    border: 10px solid var(--destaque);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.texto_perfil {
+    width: 60%;
+    margin: 30px auto 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 6px solid var(--linha);
+    border-radius: 15px;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FFFFFF;
+    border-bottom: 6px solid var(--linha);
+}
+
+.barra a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: var(--destaque);
+    background-color: #FFFFFF;
+    border: 2px solid var(--destaque);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.barra a:hover {
+    background-color: var(--destaque);
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   ÁREA DE ACESSO
+   ========================= */
+
+.acesso {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 50px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid var(--linha);
+    border-radius: 24px;
+
+    box-shadow: 0 10px 30px rgba(31, 27, 58, 0.08);
+
+    border-top: 5px solid var(--destaque);
+    border-bottom: 5px solid var(--destaque);
+    border-left: 5px solid var(--destaque);
+    border-right: 5px solid var(--destaque);
+}
+
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+.acesso a {
+    display: inline-block;
+
+    width: 250px;
+
+    margin: 15px 10px;
+    padding: 15px;
+
+    text-decoration: none;
+
+    background-color: #FFFFFF;
+    color: #2c13eb;
+
+    border: 2px solid #5B4BDB;
+    border-radius: 10px;
+
+    font-weight: 800;
+
+    transition: 0.2s;
+}
+
+.acesso a:hover {
+    background-color: #5B4BDB;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+.acesso h1 {
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+   ========================= */
+
+.voltar {
+    width: 180px !important;
+
+    margin: 60px auto 15px !important;
+
+    padding: 10px !important;
+}
+
+
+/* =========================
+   CELULAR / TELA PEQUENA
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .acesso {
+        width: 95%;
+    }
+
+    .acesso a {
+        width: 250px;
+    }
+}
