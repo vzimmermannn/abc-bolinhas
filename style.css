@@ -165,3 +165,47 @@ footer {
     text-decoration: none;
     border-radius: 10px;
 }
+.sobre-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.membro {
+  padding: 28px 24px;
+  background: #fff;
+  border: 2px solid var(--linha);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.membro-foto {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--suave);
+}
+
+.membro-inicial {
+  display: grid;
+  place-items: center;
+  background: var(--destaque);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.membro h2 {
+  margin: 16px 0 6px;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.membro p {
+  color: var(--destaque);
+  font-weight: 700;
+}
