@@ -182,3 +182,26 @@ img {
     
     color: #FFFFFF;
 }
+
+.habilidades{
+
+    width: 60%;
+    margin: 200px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--linha);
+    border-radius: 15px;
+}
+.habilidades p{
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.habilidades h1{
+
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    
+}
