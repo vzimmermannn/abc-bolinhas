@@ -205,3 +205,32 @@ img {
     font-family: Nunito, sans-serif;
     
 }
+
+
+.contatos {
+
+    width: 60%;
+    margin: 100px auto 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid var(--linha);
+    border-radius: 15px;
+}
+
+.contatos h1{
+
+    margin-top: 0%;
+    color: var(--linha);
+
+}
+
+.contatos p {
+
+    margin-top: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.titulo_contato h1 {
+    margin-top: 100px;
+}
